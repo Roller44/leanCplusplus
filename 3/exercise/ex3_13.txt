@@ -1,5 +1,5 @@
 vector<int> v1;
-//一个值为 0 的空 int 元素
+//一个空的 int 元素
 vector<int> v2(10);
 //十个值为 0 的空 int 元素
 vector<int> v3(10, 42);
