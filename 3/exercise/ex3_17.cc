@@ -15,7 +15,7 @@ int main()
     vector<string> words;
 
     while (getline(cin, input)) {
-        for (decltype(input.size()) i = 0; i < input.size(); ++i) {
+        for (decltype(input.size()) i = 0; i != input.size(); ++i) {
             if (isspace(input[i])) {
                 words.push_back(word);
                 word = "";
