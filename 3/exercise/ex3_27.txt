@@ -1,0 +1,9 @@
+usigned buf_size = 1024;
+(a) int ia[buf_size];
+    错误，数组的维度不是常量。
+(b) int ia[4 * 7 -14];
+    正确。
+(c) int ia[txt_size()];
+    错误，数组维度不是常量。
+(d) char st[11]="fundamental";
+    错误，数组的维度应该为 12，要留给字符串末尾空字符“\0”一个。
