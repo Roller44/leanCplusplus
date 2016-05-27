@@ -1,0 +1,2 @@
+It won't begin on first value of vector and the last one output is
+unproditable.
