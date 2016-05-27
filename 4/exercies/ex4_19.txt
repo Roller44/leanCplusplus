@@ -1,0 +1,6 @@
+(a) First change the position of pointer ptr and return the copied
+value. Then check whether pointer is null. Finally move the pointer
+one step to right again and see if the value which pointer is pointing
+is 0.
+(b) See if ival is 0 and see ival + 1 is 0.
+(c) See if the next variable of vector is bigger or equal to this one.
