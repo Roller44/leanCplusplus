@@ -1,2 +1,2 @@
-It won't begin on first value of vector and the last one output is
-unproditable.
+The result will be unpredictable since the priorities of them are the
+same.
