@@ -1,0 +1,1 @@
+将 j/i 的结果强制转换成 double 型并赋予 slope。
