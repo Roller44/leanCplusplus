@@ -1,0 +1,8 @@
+(a) 判断 iter 是否位于字符串末尾，如果不是，执行 while
+语句块内的内容。
+(b) 判断 status 是不是真，如果是，则执行 while
+语句块内语句，如果不是，则执行 if
+块内的语句。但是这里有错误，改正如下：
+bool status = find(word);
+while (status) { /* ... */ }
+if (!status) { /* ... */ }
