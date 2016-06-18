@@ -1,8 +1,8 @@
 #include <iostream>
-
+#include "Chapter6.h"
 using std::cout;
 using std::endl;
-int fact(int val);
+//int fact(int val);
 
 int main()
 {
