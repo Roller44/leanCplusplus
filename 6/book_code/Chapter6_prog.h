@@ -7,3 +7,9 @@ int fact(int val);
 #define RESET
 void reset(int *ip);
 #endif
+
+#ifndef SURESET
+#define SURESET
+void reset(int &i);
+#endif
+
