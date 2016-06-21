@@ -8,7 +8,6 @@ using std::endl;
 int main()
 {
     int v1 = 0, v2 = 0;
-    int *p1 = &v1, *p2 = &v2;
 
     cout << "请输入两个数：" << endl;
     cin >> v1 >> v2;
