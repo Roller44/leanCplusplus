@@ -22,3 +22,18 @@ void point_compare(int v1, int *ip);
 #define POINTEXCHANGE
 void point_exchange(int *p1, int *p2);
 #endif
+
+#ifndef PRINT_ONE
+#define PRINT_ONE
+void print(const int *cp);
+#endif
+
+#ifndef PRINT_TWO
+#define PRINT_TWO
+void print(const int *beg, const int *end);
+#endif
+
+#ifndef PRINT_THREE
+#define PRINT_THREE
+//void print(const int ia[], size_t size);
+#endif
