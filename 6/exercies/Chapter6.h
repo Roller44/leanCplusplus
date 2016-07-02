@@ -12,3 +12,8 @@ void exchange(int *p1, int *p2);
 #define QUOTE
 void exchange(int &q1, int &q2);
 #endif
+
+#ifndef POINTCOMPARE
+#define POINTCOMPARE
+void point_compare(int v1, int *ip);
+#endif
