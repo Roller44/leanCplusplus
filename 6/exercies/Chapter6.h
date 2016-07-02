@@ -17,3 +17,8 @@ void exchange(int &q1, int &q2);
 #define POINTCOMPARE
 void point_compare(int v1, int *ip);
 #endif
+
+#ifndef POINTEXCHANGE
+#define POINTEXCHANGE
+void point_exchange(int *p1, int *p2);
+#endif
