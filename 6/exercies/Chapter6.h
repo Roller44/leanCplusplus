@@ -1,4 +1,6 @@
 #include <initializer_list>
+#include <iterator>
+
 using std::initializer_list;
 
 #ifndef FACT
@@ -26,6 +28,7 @@ void point_compare(int v1, int *ip);
 void point_exchange(int *p1, int *p2);
 #endif
 
+//abandoned
 #ifndef PRINT_ONE
 #define PRINT_ONE
 void print(const int *cp);
@@ -38,7 +41,7 @@ void print(const int *beg, const int *end);
 
 #ifndef PRINT_THREE
 #define PRINT_THREE
-//void print(const int ia[], size_t size);
+void print(const int ia[], size_t size);
 #endif
 
 #ifndef COUNT
