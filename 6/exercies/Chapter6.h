@@ -1,3 +1,6 @@
+#include <initializer_list>
+using std::initializer_list;
+
 #ifndef FACT
 #define FACT
 int fact(int val);
@@ -36,4 +39,9 @@ void print(const int *beg, const int *end);
 #ifndef PRINT_THREE
 #define PRINT_THREE
 //void print(const int ia[], size_t size);
+#endif
+
+#ifndef COUNT
+#define COUNT
+void count(initializer_list<int> i);
 #endif
