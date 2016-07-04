@@ -48,3 +48,8 @@ void print(const int ia[], size_t size);
 #define COUNT
 void count(initializer_list<int> i);
 #endif
+
+#ifndef PRINT_VEC
+#define PRINT_VEC
+int print_vec(int times);
+#endif
