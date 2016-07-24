@@ -1,0 +1,4 @@
+(a) 有二义性；
+(b) 是最佳匹配，匹配 void f(int)；
+(c) 是最佳匹配，匹配 void f(int, int)；
+(d) 是最佳匹配，匹配 void f(double, double = 3.14)。
