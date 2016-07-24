@@ -1,7 +1,9 @@
 #include <initializer_list>
 #include <iterator>
+#include <vector>
 
 using std::initializer_list;
+using std::vector;
 
 #ifndef FACT
 #define FACT
@@ -52,4 +54,9 @@ void count(initializer_list<int> i);
 #ifndef PRINT_VEC
 #define PRINT_VEC
 int print_vec(int times);
+#endif
+
+#ifndef PRINT_VEC_SIZE
+#define PRINT_VEC_SIZE
+void print_vec(vector<int> vec, int times);
 #endif
