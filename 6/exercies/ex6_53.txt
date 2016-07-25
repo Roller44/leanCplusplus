@@ -1,0 +1,5 @@
+(a) 当实参是 int 非常量引用时选择 int calc(int& , int&)，当实参是 int
+常量引用时选择 int calc(const int&, const int&)；
+(b) 当实参是 char 非常量指针时选择 int calc(char*, char*)，当实参是
+char 常量指针时选择 int calc(const char*, const char*)；
+(c) 非法，当实参是常量 char 指针时两个都可以选择。
