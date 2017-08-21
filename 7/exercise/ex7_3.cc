@@ -17,7 +17,7 @@ int main(int argc, char const* argv[])
             {
                 total.combine(trans);
             } else {
-                cout << total.isbn() << endl;
+				cout << total.isbn() << endl;
                 total = trans;
             }
         }
