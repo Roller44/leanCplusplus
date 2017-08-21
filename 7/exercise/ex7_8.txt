@@ -1,0 +1,1 @@
+Because we need to change the values of Sales_data item while we calling function read, but we don't need to change anything when calling function print.
