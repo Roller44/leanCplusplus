@@ -1,6 +1,7 @@
 #include <iostream>
 #include "ex7_2_Sales_data.h"
 
+using std::cin;
 using std::cout;
 using std::endl;
 using std::cerr;

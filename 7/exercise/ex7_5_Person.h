@@ -16,7 +16,7 @@ struct Person
 
     string address() const
     {
-        return address;
+        return Address;
     }
 };
 #endif
