@@ -4,6 +4,8 @@
 #include <iostream>
 
 using std::cin;
+using std::cout;
+using std::endl;
 using std::string;
 
 struct Sales_data {
@@ -27,17 +29,17 @@ struct Sales_data {
 Sales_data add(Sales_data& lhs, Sales_data& rhs)
 {
 	Sales_data sum = lhs;
-	Salse_data.combine(rhs);
+	sum.combine(rhs);
 	return sum;
 }
 
-std::ostream &print(std::ostream& os, const Sales_data& item)
+std::ostream& print(std::ostream& os, const Sales_data& item)
 {
-	os << item.bookNo << " " << item.revenue << item.units_sold << endl;
+	os << item.bookNo << " " << item.units_sold << item.revenue;
 	return os;
 }
 
-std::istream &read(std::istream& is, Sales_data& item)
+std::istream& read(std::istream& is, Sales_data& item)
 {
 	double price = 0;
 	is >> item.bookNo >> item.units_sold >> price;
