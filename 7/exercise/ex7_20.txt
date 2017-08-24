@@ -1,0 +1,7 @@
+When the programmer allow another class or function to access its nonpublic members, the friends are useful.
+Pros:
+	1. Usr code cannot inadvertently corrupt the state of an encapsulated object.
+	2. The implementation of an encapsulated class can change over time without requiring changes in user-level code.
+Cons:
+	1. Lessens encapsulation and therefore maintainability.
+	2. Code verbosity, declarations inside the class, outside the class.
