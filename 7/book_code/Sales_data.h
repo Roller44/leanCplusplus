@@ -1,12 +1,11 @@
-struct Sales_data
+class Sales_data
 {
-	// constuctors added
+public:
 	Sales_data() = default;
 	Sales_data(const std::string& s): bookNo(s) { }
 	Sales_data(const std::string& s, unsigned n, double p): bookNo(s), units_sold(n), revenue(p * n) { }
 	Sales_data(std::istream &)
 
-	// new members: operations on Sales_data objects
 	std::string isbn() const
 	{
 		return bookNo;
@@ -15,9 +14,18 @@ struct Sales_data
 	{
 		const Sales_data&
 	};
-	double avg_price() const;
-
-	// data members are unchanged from $2.6.1 (p. 72)
+private:
+	double Sales_data::avg_price() const
+	{
+		if (units_sold)
+		{
+			return revenue / units_sold;
+		}
+		else
+		{
+			return 0;
+		}
+	}
 	std::string bookNo;
 	unsigned units_sold = 0;
 	double revenus = 0.0;
@@ -48,18 +56,6 @@ std::istream& read(std::istream& is, Sales_data& item)
 	is >> item.bookNo >> item.units_sold >> price;
 	item.revenus = price * item.units_sold;
 	return is;
-}
-
-double Sales_data::avg_price() const
-{
-	if (units_sold)
-	{
-		return revenue / units_sold;
-	}
-	else
-	{
-		return 0;
-	}
 }
 
 Sales_data& Sales_data::combine(const Sales_data &rhs)
