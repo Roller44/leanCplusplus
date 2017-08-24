@@ -1,5 +1,9 @@
 class Sales_data
 {
+Sales_data add(const Sales_data&, const Sales_data&);
+std::istream& read(std::istream&, Sales_data&);
+std::ostream& print(std::ostream&, const Sales_data&);
+
 friend Sales_data add(const Sales_data&, const Sales_data&);
 friend std::ostream& print(std::ostream&, const Sales_data&);
 friend std::istream& read(std::istream&, Sales_data&);
@@ -34,6 +38,11 @@ private:
 	unsigned units_sold = 0;
 	double revenus = 0.0;
 };
+
+// declarations
+Sales_data add(const Sales_data&, const Sales_data&);
+std::istream& read(std::istream&, Sales_data&);
+std::ostream& print(std::ostream&, const Sales_data&);
 	
 Sales_data::Sales_data(std::istream& is)
 {
