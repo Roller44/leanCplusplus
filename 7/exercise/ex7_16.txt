@@ -1,0 +1,3 @@
+There ar no restrictions on how often an access specifier may appear.
+Members defined after a public specifier are accessible to all parts of the program. The public members define the interface to the class.
+Members defined after a private specifier are accessible to the member functions of the class but are not accessible to code that uses the class. The private sections encapsulate (i.e., hide) the implementation.

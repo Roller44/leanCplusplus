@@ -1,0 +1,2 @@
+Member functions name and address would be declared as public and members Name and Address would be declared as private.
+Because these memeber functions are supose to provide informations to users, which are interface. On the other hand, members Name and Address cannot be change by users according to consts that following members functions parameter lists. Thus they can only be declared as private.
