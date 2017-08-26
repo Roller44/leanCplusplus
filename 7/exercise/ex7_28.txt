@@ -1,0 +1,1 @@
+It would return a copy of the object, then it would display on another screen.
