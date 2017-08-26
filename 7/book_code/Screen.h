@@ -25,7 +25,7 @@ public:
 	{
 		return contents[cursor];
 	}
-	inline char get(pos ht, post wd) const;
+	inline char get(pos ht, pos wd) const;
 	Scrren& move(pos r, pos c);
 	void some_member() const;
 
@@ -48,14 +48,13 @@ inline Screen& Screen::set(pos r, pos col, char ch)
 	return *this;
 }
 
-inline
-Screen& Screen::move(pos r, pos c)
+inline Screen& Screen::move(pos r, pos c)
 {
 	pos row = r * width;
 	cursor = row + c;
 	return *this;
 }
-char Screen::get(pos r, pos c)
+inline char Screen::get(pos r, pos c) const
 {
 	pos row = r * width;
 	return contents[row + c];
