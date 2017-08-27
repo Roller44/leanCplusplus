@@ -6,6 +6,9 @@ public:
 	// reset the Screen at the given position to all blanks
 	void clear(ScreenIndex);
 
+	// add a Screen to the window and returns its index
+	ScreenIndex addScreen(const Screen&);
+
 private:
 	// Screens this Window_mgr is tracking by default, a Window_mgr has one standard sized blank Screen
 	std::vector<Screen> screens{Scrren(24, 80, ' ')};
@@ -18,3 +21,9 @@ private:
 		s.contents = string(s.height * s.width, ' ');
 	}	
 };
+
+Window_mgr::ScreenIndex Window_mgr::addScreen(const Screen& s)
+{
+	screens.push_back(s);
+	return screen.size() - 1;
+}
