@@ -1,5 +1,17 @@
+// overload storeOn functions
+extern std::ostream& storeOn(std::ostream&, Screen&);
+extern BitMap& storeOn(BitMap&, Screen&);
+
 class Screen
 {
+	// ostream version of storeOn may access the private parts of Screen objects
+	friend std::ostream& storeOn(std::ostream&, Screen &);
+
+	// Window_mgr members can access the private parts of class Screen
+	friend class Window_mgr;
+
+	friend void Window_mgr::clear(ScreenIndex);
+
 public:
 	Screen& set(char);
 	Screen& set(pos, pos, char);
