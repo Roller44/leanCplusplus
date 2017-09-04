@@ -1,0 +1,3 @@
+(a) No error.
+(b) No such constructor.
+(c) Error.
