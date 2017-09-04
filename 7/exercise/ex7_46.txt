@@ -1,0 +1,4 @@
+(a) Untrue. Synthenized default constructor.
+(b) Untrue. A default constructor is a constructor supplies defualt values to memebrs.
+(c) Untrue. The class should provide a default constructor.
+(d) Untrue. Only if a class does not define any constructor.
