@@ -1,0 +1,1 @@
+No. A constexpr function has exactly one return statement.

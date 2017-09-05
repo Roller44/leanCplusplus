@@ -1,0 +1,1 @@
+No. Because type string is not a literal type.
