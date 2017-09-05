@@ -1,0 +1,10 @@
+The bookNo is 978-0590353403, the units_sold is 25, the revenue is 15.99.
+
+But there are some in-class initializers, the struct should be:
+
+struct Sales_data
+{
+	std::string bookNo;
+	unsigned units_sold;
+	double revenue;
+}
