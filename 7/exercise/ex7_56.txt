@@ -1,0 +1,1 @@
+Static class member is a type of member that are associated with the class, rather than with individual objects of the class type. From an efficiency standpoint, if we want to change the value of a static class memeber, we do not need to change each object one by one.
